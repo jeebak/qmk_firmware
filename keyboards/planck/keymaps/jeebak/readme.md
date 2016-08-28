@@ -1,4 +1,4 @@
-jeebak's layout
+jeebak's Planck layout
 =======================
 This WIP keymap attempts to minimize fingers straying away from the home row.
 To aid in this endeavor, when additional modifyer keys to switch layers are
