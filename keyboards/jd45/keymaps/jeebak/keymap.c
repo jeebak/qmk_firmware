@@ -1,4 +1,6 @@
 #include "jd45.h"
+#include "action_layer.h"
+#include "eeconfig.h"
 
 extern keymap_config_t keymap_config;
 
@@ -75,8 +77,9 @@ enum macro_keycodes {
 #define AG_T_N      M(KC_AG_TAB_N)              //                  Tab New, and
 #define AG_T_R      M(KC_AG_TAB_R)              //                  Tab Reopen Closed
 
+const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+
 /* Qwerty
- *
  * ,---------+------+------+------+------+------+------+------+------+------+------+------+------.
  * |Hyper/Tab|   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  | Bksp | Bksp |
  * |---------`------`------`------`------`------`------`------`------`------`------`------`------|
@@ -87,8 +90,6 @@ enum macro_keycodes {
  * |   RGUI |  Alt  |  GUI  | Lower | TC/Space | TC/Space |  Raise  |  Vol-  |  Vol+  |   Play   |
  *  `-------+-------+-------+-------+---^^^----+---^^^----+---------+--------+--------+----------'
  */
-
-const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = KEYMAP_JD45(
 /*,--------+-------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------.*/
     HPR_TAB,   KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, KC_BSPC, KC_BSPC,
