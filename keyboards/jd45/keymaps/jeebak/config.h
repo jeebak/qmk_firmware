@@ -1,7 +1,10 @@
+#ifndef CONFIG_USER_H
+#define CONFIG_USER_H
+
 #include "../../config.h"
 
 /**
- *JD45 keymap definition macro
+ *  JD45 keymap definition macro
  */
 #define KEYMAP_JD45( \
     K01, K02, K03, K04, K05, K06, K07, K08, K09, K10, K11, K12, K13, \
@@ -14,3 +17,5 @@
     { K26,   K27,   K28,   K29,   K30,   K31,   K32,   K33,   K34,   K35,   K36,   K37,   KC_NO }, \
     { K38,   K39,   K40,   K41,   K42, KC_NO,   K43, KC_NO,   K44,   K45,   K46,   K47,   KC_NO }  \
 }
+
+#endif
